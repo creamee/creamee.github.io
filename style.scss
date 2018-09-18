@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: white;
+  font: 18px/1.4 helvetica;
+  color: 0e0e52;
 }
 
 .container {
@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #blue;
   }
 }
 
@@ -123,11 +123,11 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: 0e0e52;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: #0e0e52;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -156,7 +156,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #red;
 
   @include mobile {
     text-align: center;
@@ -287,3 +287,26 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+table, th, td {
+border: 1px solid white;
+background-color:#0e0e52;
+
+}
+
+td {
+vertical-align: middle;
+padding: 10px;
+}
+
+th {
+color: white;
+background: #0e0e52;
+height:50px;
+vertical-align: middle;
+}
